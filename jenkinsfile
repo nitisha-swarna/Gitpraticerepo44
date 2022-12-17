@@ -7,7 +7,7 @@ stages {
         }
     }
     stage('learning') {
-        agent {label: 'OPENJDK_11_MAVEN'}
+        agent {label 'OPENJDK_11_MAVEN'}
         steps {
         git url: 'https://github.com/nitisha-swarna/Gitpraticerepo44.git',
           branch: 'main'
