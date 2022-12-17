@@ -1,9 +1,16 @@
-node {
+pipeline {
+agent any
+stages {
     stage('test') {
-        sh 'echo hello world'
+        steps {
+          sh 'echo hello world'
+        }
     }
     stage('learning') {
+        steps {
         git url: 'https://github.com/nitisha-swarna/Gitpraticerepo44.git',
-        branch: 'main'
+          branch: 'main'
+        }
     }
+}
 }
