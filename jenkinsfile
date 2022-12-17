@@ -1,10 +1,8 @@
 node {
-
-    stage('test'){
-
+    stage('test') {
         sh 'echo hello world'
     }
-    stage('learning'){
+    stage('learning') {
         git url: 'https://github.com/nitisha-swarna/Gitpraticerepo44.git',
         branch: 'master'
     }
